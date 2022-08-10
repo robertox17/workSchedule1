@@ -10,6 +10,7 @@ $('.saveBtn').on('click', function(event){
     var input= ($(this).siblings('textarea').val())
     localStorage.setItem(time,input)
 });
+
 $(document).ready (function () {
     for (let i = 9; i < 18; i++){
         $("#hour-"+ i + " .description").val(localStorage.getItem("hour-"+ i))
